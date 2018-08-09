@@ -31,6 +31,5 @@ foreach ($Record in $NS){
 
 Write-Host "Here is the list of listening ports, the process that launched them, and the command line that did so; where available."
 Foreach($InfoListElement in $InfoList){
-    Write-Host "Information: "
     $InfoListElement
 }
