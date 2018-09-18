@@ -8,7 +8,7 @@ foreach ($Record in $NS){
     $RecordSplit = $Record -split '\s\s*'    
     $Port = "" 
    
-    if($r[2] -match '\['){
+    if($RecordSplit[2] -match '\['){
         $Port = $RecordSplit[2] -split "\]:"
     }
     else{        
